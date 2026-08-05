@@ -1,1 +1,89 @@
-body{margin:0;background:#111;color:#fff;font-family:Arial}header{text-align:center;padding:60px;background:#b30000}.btn{display:inline-block;padding:12px 20px;background:#fff;color:#b30000;text-decoration:none;border-radius:8px;font-weight:bold}.card{background:#222;margin:20px;padding:20px;border-left:4px solid red}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:#00e5ff;
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00e5ff;
+}
+
+.hero-content{
+    text-align:center;
+    margin-top:180px;
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content span{
+    color:#00e5ff;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00e5ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    color:#00e5ff;
+    margin-bottom:20px;
+}
