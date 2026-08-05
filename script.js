@@ -431,3 +431,246 @@ document.body.appendChild(particle);
 =====================================*/
 
 console.log("ION ESPORTS Premium Website Loaded Successfully 🚀");
+
+
+/*=====================================
+      FINAL ANIMATION FIX
+=====================================*/
+
+/* Scroll Reveal */
+
+.game-card,
+.tournament-card,
+.stat,
+.about-content,
+.about-image,
+.contact-box{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s ease;
+
+}
+
+.show{
+
+opacity:1 !important;
+
+transform:translateY(0) !important;
+
+}
+
+/* Active Navbar */
+
+.navbar ul li a.active{
+
+color:#00d9ff;
+
+}
+
+.navbar ul li a.active::after{
+
+width:100%;
+
+}
+
+/* Progress Bar */
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0;
+
+height:4px;
+
+background:linear-gradient(90deg,#00d9ff,#00ffff);
+
+box-shadow:0 0 15px #00d9ff;
+
+z-index:999999;
+
+}
+
+/* Ripple Effect */
+
+.btn1,
+.btn2,
+.card-btn,
+.join-btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+transform:scale(0);
+
+background:rgba(255,255,255,.45);
+
+animation:ripple .6s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+/* Floating Particles */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+opacity:.3;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-100vh);
+
+opacity:0;
+
+}
+
+}
+
+/* Premium Glow */
+
+.hero h2,
+.games h2,
+.tournaments h2,
+.about h2,
+.contact h2{
+
+animation:titleGlow 2.5s infinite alternate;
+
+}
+
+@keyframes titleGlow{
+
+from{
+
+text-shadow:0 0 10px #00d9ff;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 20px #00ffff,
+
+0 0 40px #00d9ff,
+
+0 0 70px #0099ff;
+
+}
+
+}
+
+/* Glass Hover */
+
+.game-card:hover,
+.tournament-card:hover,
+.contact-box:hover,
+.stat:hover{
+
+background:rgba(255,255,255,.08);
+
+}
+
+/* Hero Background Zoom */
+
+.hero{
+
+animation:heroZoom 20s infinite alternate;
+
+}
+
+@keyframes heroZoom{
+
+from{
+
+background-size:100%;
+
+}
+
+to{
+
+background-size:110%;
+
+}
+
+/* Button Glow Pulse */
+
+.btn1,
+.join-btn{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 10px rgba(0,217,255,.4);
+
+}
+
+50%{
+
+box-shadow:0 0 35px rgba(0,217,255,.9);
+
+}
+
+100%{
+
+box-shadow:0 0 10px rgba(0,217,255,.4);
+
+}
+
+}
+
+/* Selection */
+
+::selection{
+
+background:#00d9ff;
+
+color:#000;
+
+      }
