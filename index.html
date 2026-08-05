@@ -1,26 +1,205 @@
-<header class="hero">
-  <nav>
-    <h2 class="logo">ION ESPORTS</h2>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Tournaments</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ION ESPORTS</title>
 
-  <div class="hero-content">
-    <h1>WELCOME TO <span>ION ESPORTS</span></h1>
-    <p>Professional Free Fire & BGMI Tournament Platform</p>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-    <a href="#" class="btn">REGISTER NOW</a>
-  </div>
+body{
+background:#090909;
+color:white;
+}
+
+header{
+background:#111;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#00d9ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#111,#001d33,#000);
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+color:#00d9ff;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+.btn{
+padding:16px 45px;
+background:#00d9ff;
+color:black;
+font-size:22px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:70px 20px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:35px;
+color:#00d9ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:#151515;
+padding:25px;
+border-radius:18px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px cyan;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#00d9ff;
+}
+
+.card p{
+font-size:18px;
+line-height:30px;
+}
+
+footer{
+background:#111;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+ION ESPORTS
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Tournament</a>
+
+<a href="#">Schedule</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
 </header>
 
-<section class="about">
-  <h2>ABOUT ION ESPORTS</h2>
-  <p>
-    Join India's fastest growing esports community. Participate in exciting
-    tournaments, win cash prizes and compete with the best players.
-  </p>
+<div class="hero">
+
+<h1>ION ESPORTS</h1>
+
+<p>Professional Free Fire & BGMI Tournament Platform</p>
+
+<a href="#" class="btn">REGISTER NOW</a>
+
+</div>
+
+<section>
+
+<h1 class="title">Upcoming Tournament</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>FREE FIRE</h2>
+
+<p>
+Prize Pool ₹10,000<br><br>
+
+Date : Coming Soon
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>BGMI</h2>
+
+<p>
+
+Prize Pool ₹15,000
+
+<br><br>
+
+Date : Coming Soon
+
+</p>
+
+</div>
+
+</div>
+
 </section>
