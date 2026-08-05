@@ -1,13 +1,32 @@
 .hero{
     height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-    url("images/bg.jpg");
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("images/hero.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#00d9ff;
+}
+
+.hero p{
+    color:white;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 30px;
+    background:#00d9ff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
 }
